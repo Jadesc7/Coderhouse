@@ -166,6 +166,26 @@ input {text-align: center;
     place-items: center;
     
 }
+/* REDES */
+.redes  {display: flex;
+    width: 900px;
+    height: 450px;
+
+}
+.img1  {
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;  
+}
+
+img:hover{cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+}
+
 
 
 /* FOOTER */
