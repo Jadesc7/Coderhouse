@@ -1,0 +1,207 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+{font-family: 'Bungee', sans-serif;
+}
+
+
+/*  BODY */
+body {width: 100%;
+    background-color: black;
+    font-size: 20px;
+    background-image: url(/Img/fondo\ pagina\ 1.jpg);
+    font-family: 'Bungee', sans-serif;
+    color: white;
+
+}
+
+/*  NAVEGADOR */
+.nav-item {font-family: 'Bungee', sans-serif;
+    border-bottom: 5px solid  #ED1C24;   
+
+}
+
+.navbar-nav{ gap: 15px;    
+}
+
+/* PAGINA METAS */
+
+h1{ font-size: 20px;
+    font-family: 'Bungee', sans-serif;
+    width: auto;
+    height: auto;
+    text-align: center;
+    background: #0B0B0B;
+    padding: 20px  ;
+    margin:20px;
+    border-radius: 20px;
+    border: #ED1C24 solid 5px;
+    text-shadow: 0 0 20px #ED1C24;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+
+}
+
+
+section {background: #0B0B0B ;
+    color: white;
+    font-family: 'Bungee', sans-serif;
+    width: auto;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding:40px ;
+    border:#ED1C24 solid 5px;
+    border-radius: 20px;
+    justify-content: center;    
+}
+
+
+summary {font-size: 25px;
+    border: #ED1C24 2px solid;
+    background: #323234 ;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    line-height:auto;
+    width: auto;
+}
+
+.img_arma{height: auto;
+    width: 100%;
+    max-width: 50%;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    border-bottom: none;
+    border-top: none; 
+}
+
+.accesorios_armas{list-style: none;
+    border-top: none;
+    background: #0B0B0B;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.accesorios_armas li h3 {font-size: 18px;
+    background: #323234;
+
+}
+
+.accesorios_armas li h4 {font-size: 20px;
+}
+
+/* MI CUENTA*/
+
+.InicioSesion {width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin: 100px;
+    background: #0B0B0B 400px;
+    border-radius: 20px; 
+    border: 5PX solid #ED1C24;
+    display: grid;
+    place-items: center;
+}
+
+.Recordar{font-size: 12px;
+    cursor: pointer;
+    color: white;
+
+}
+
+.BotonIniciarSesion { font-size: 25px;
+    height: 50PX;
+    width: 100%;  
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20PX;
+    text-align: center;
+    background-color: #ED1C24;
+    color: white;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+   cursor: pointer;
+
+}
+
+.Usuario {font-family:'Bungee', sans-serif;
+    color: white;
+     width:auto;
+      padding: auto;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        
+}
+
+input {text-align: center;
+    height: 40PX;
+    width: 300PX;
+     padding: 10px;
+     margin: 10px;
+     display: grid;
+     place-items: center;
+     
+}
+
+.Contraseña {width:auto;
+    color: white;
+    font-family:'Bungee', sans-serif;
+    justify-content: center;
+    padding: auto;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    
+}
+
+
+/* FOOTER */
+
+footer {background: #0B0B0B;
+    height: 100px;
+    width: 100%;
+    padding: 10px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    border: #ED1C24 solid 5px;
+}
+
+.LogoFooter{height: 70px;
+    margin: auto;
+    padding: auto   ;   
+    display: flex;   
+}
+
+.LogoAuspiciante1{height: 50px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    display: flex;  
+}
+
+.texto_footer{color: white;
+    font-family: 'Bungee', sans-serif; ;
+    text-align: center;
+    margin: auto;
+    font-size: 10px ;
+    text-align: center;
+    padding: auto   ;
+    display: flex;
+    justify-content: space-between ;
+}
+
