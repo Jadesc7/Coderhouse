@@ -13,6 +13,42 @@
      <!--Boostrap-->
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+     <style>
+      .navbar {
+        background-color: black !important; /* Fondo negro */
+    }
+    
+    .navbar .navbar-nav .nav-link {font-family:'Bungee', sans-serif !important
+        color: white !important; /* Letras blancas */
+    }
+    
+    .navbar .navbar-toggler-icon {
+        filter: invert(1) !important; /* Icono del botón del menú invertido para que sea visible en fondo oscuro */
+    }
+    
+    .navbar .navbar-nav .nav-link:hover::after {
+        background-color: red; /* Cambia el color del subrayado al pasar el cursor */
+    }
+    .navbar .navbar-nav .nav-link {
+        color: white !important; /* Letras blancas */
+        position: relative; /* Para posicionar el subrayado */
+    }
+    
+    .navbar .navbar-nav .nav-link::after {
+        content: ''; /* Agrega un contenido vacío para el subrayado */
+        position: absolute; /* Posiciona el subrayado de forma absoluta */
+        left: 0; /* Lo coloca al inicio del elemento */
+        bottom: -2px; /* Lo coloca debajo del texto */
+        width: 100%; /* El ancho es igual al ancho del elemento padre */
+        height: 2px; /* Altura del subrayado */
+        background-color: transparent; /* Inicialmente transparente */
+        transition: background-color 0.3s; /* Transición suave para el color */
+    }
+    
+    .navbar .navbar-nav .nav-link:hover::after {
+        background-color: red; /* Cambia el color del subrayado al pasar el cursor */
+    }
+    </style>
 
 
   </head>
