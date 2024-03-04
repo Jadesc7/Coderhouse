@@ -191,32 +191,24 @@ input {text-align: center;
     
 }
 /* REDES */
-.redes {
+  .redes {
     display: flex;
-    width: 900px;
-    height: 450px;
+    flex-wrap: wrap; /* Establece un contenedor flexible */
   }
   
   .redes a {
-    display: inline-block;
+    margin-right: 10px; /* Espacio entre las imágenes */
   }
   
   .fotored {
-    display: flex;
-    width: 0px;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: .8;
+    width: 200px; /* Ancho inicial de las imágenes */
+    height: auto; /* Altura ajustada automáticamente */
+    transition: transform 0.3s; /* Transición suave para el efecto de agrandamiento */
   }
   
   .fotored:hover {
-    cursor: pointer; /* Cambia el cursor a una cruz cuando se pasa el mouse sobre la imagen */
-    width: 300px;
-    opacity: 1;
-    filter: contrast(120%);
+    transform: scale(1.3); /* Agrandar la imagen al 120% cuando pases el mouse sobre ella */
   }
-
-
 
 /* FOOTER */
 
