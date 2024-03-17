@@ -48,7 +48,17 @@ body {width: 100%;
     background-color: red; /* Cambia el color del subrayado al pasar el cursor */
 }
 
-/* PAGINA METAS */
+
+/* ANIMACION DEL TITULO DE PAGINAS */
+
+@keyframes izquierdaderecha {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0%);
+  }
+}
 
 h1{ font-size: 20px;
     font-family: 'Bungee', sans-serif;
@@ -64,9 +74,12 @@ h1{ font-size: 20px;
     justify-content: center;
     justify-items: center;
     color: white !important;
+    animation: izquierdaderecha 2s ease-in-out;
 
 }
 
+
+/* PAGINA METAS */
 
 section {background: #0B0B0B ;
     color: white;
