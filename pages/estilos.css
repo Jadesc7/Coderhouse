@@ -124,72 +124,68 @@ summary {font-size: 25px;
 .accesorios_armas li h4 {font-size: 20px;
 }
 
-/* MI CUENTA*/
+/* Estilos para el formulario de inicio de sesión */
+.InicioSesion {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #323234;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(250, 250, 250, 0.1);
+  }
 
-.InicioSesion {width: 100%;
-    text-align: center;
-    padding: 10px;
-    margin: 100px;
-    background: #0B0B0B 400px;
-    border-radius: 20px; 
-    border: 5PX solid #ED1C24;
-    display: grid;
-    place-items: center;
+  .Usuario label,
+.Contraseña label {
+  color: #ED1C24; 
 }
-
-.Recordar{font-size: 12px;
-    cursor: pointer;
-    color: white;
-
-}
-
-.BotonIniciarSesion { font-size: 25px;
-    height: 50PX;
-    width: 100%;  
+  
+  .InicioSesion form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Usuario,
+  .Contraseña {
+    margin-bottom: 20px;
+  }
+  
+  .Usuario input,
+  .Contraseña input {
+    width: 100%;
     padding: 10px;
-    margin: 10px;
-    border-radius: 20PX;
-    text-align: center;
+    border: 1px solid #ED1C24;
+    border-radius: 5px;
+  }
+  
+  .Recordar {
+    text-align: right;
+    font-size: 14px;
+  }
+  
+  .Recordar a {
+    color: #ED1C24;
+    text-decoration: none;
+  }
+  
+  .Recordar a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .BotonIniciarSesion {
+    padding: 10px;
     background-color: #ED1C24;
-    color: white;
-    display: grid;
-    place-items: center;
-    justify-content: center;
-   cursor: pointer;
+    color: #f8efef;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .BotonIniciarSesion:hover {
+    background-color: #f84600;
+  }
 
-}
-
-.Usuario {font-family:'Bungee', sans-serif;
-    color: white;
-     width:auto;
-      padding: auto;
-        margin: auto;
-        text-align: center;
-        display: grid;
-        place-items: center;
-        
-}
-
-input {text-align: center;
-    height: 40PX;
-    width: 300PX;
-     padding: 10px;
-     margin: 10px;
-     display: grid;
-     place-items: center;
-     
-}
-
-.Contraseña {width:auto;
-    color: white;
-    font-family:'Bungee', sans-serif;
-    justify-content: center;
-    padding: auto;
-    margin: auto;
-    display: grid;
-    place-items: center;
-    
-}
 /* REDES */
   .redes {
     display: flex;
