@@ -1,0 +1,277 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  BODY */
+body {
+  width: 100%;
+  background-color: black;
+  font-size: 20px;
+  background-image: url(../img/fondopagina1.jpg);
+  font-family: "Bungee", sans-serif;
+  color: white;
+}
+
+/*  NAVEGADOR*/
+.navbar {
+  background-color: black !important; /* Fondo negro */
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: "Bungee", sans-serif !important;
+  color: white !important; /* Letras blancas */
+}
+
+.navbar .navbar-toggler-icon {
+  filter: invert(1) !important; /* Icono del botón del menú invertido para que sea visible en fondo oscuro */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white !important; /* Letras blancas */
+  position: relative; /* Para posicionar el subrayado */
+}
+
+.navbar .navbar-nav .nav-link::after {
+  content: ""; /* Agrega un contenido vacío para el subrayado */
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px; /* Altura del subrayado */
+  background-color: transparent; /* Inicialmente transparente */
+  transition: background-color 0.3s; /* Transición suave para el color */
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  background-color: red; /* Cambia el color del subrayado al pasar el cursor */
+}
+
+/* PAGINA METAS */
+h1 {
+  font-size: 20px;
+  font-family: "Bungee", sans-serif;
+  width: auto;
+  height: auto;
+  text-align: center;
+  background: #0B0B0B;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 20px;
+  border: #ED1C24 solid 5px;
+  text-shadow: 0 0 20px #ED1C24;
+  justify-content: center;
+  justify-items: center;
+  color: white !important;
+}
+
+section {
+  background: #0B0B0B;
+  color: white;
+  font-family: "Bungee", sans-serif;
+  width: auto;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+  border: #ED1C24 solid 5px;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+summary {
+  font-size: 25px;
+  border: #ED1C24 2px solid;
+  background: #323234;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  line-height: auto;
+  width: auto;
+}
+
+.img_arma {
+  height: auto;
+  width: 100%;
+  max-width: 50%;
+  padding: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  border-bottom: none;
+  border-top: none;
+}
+
+.accesorios_armas {
+  list-style: none;
+  border-top: none;
+  background: #0B0B0B;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.accesorios_armas li h3 {
+  font-size: 18px;
+  background: #323234;
+}
+
+.accesorios_armas li h4 {
+  font-size: 20px;
+}
+
+/* MI CUENTA */
+.InicioSesion {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0B0B0B;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(250, 250, 250, 0.1);
+}
+
+.Usuario label,
+.Contraseña label {
+  color: #ED1C24;
+}
+
+.InicioSesion form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Usuario,
+.Contraseña {
+  margin-bottom: 20px;
+}
+
+.Usuario input,
+.Contraseña input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ED1C24;
+  border-radius: 5px;
+}
+
+.Recordar {
+  text-align: right;
+  font-size: 14px;
+}
+
+.Recordar a {
+  color: #ED1C24;
+  text-decoration: none;
+}
+
+.Recordar a:hover {
+  text-decoration: underline;
+}
+
+.BotonIniciarSesion {
+  padding: 10px;
+  background-color: #ED1C24;
+  color: #f8efef;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.BotonIniciarSesion:hover {
+  background-color: #f84600;
+}
+
+/* REDES */
+.redes {
+  display: flex;
+  flex-wrap: wrap; /* Establece un contenedor flexible */
+}
+
+.redes a {
+  margin-right: 10px; /* Espacio entre las imágenes */
+}
+
+.fotored {
+  width: 200px; /* Ancho inicial de las imágenes */
+  height: auto; /* Altura ajustada automáticamente */
+  transition: transform 0.3s; /* Transición suave para el efecto de agrandamiento */
+}
+
+.fotored:hover {
+  transform: scale(1.3); /* Agrandar la imagen al 120% cuando pases el mouse sobre ella */
+}
+
+/* NOTICIAS */
+.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.imgnoticias,
+.parrafonoti {
+  width: calc(50% - 10px);
+}
+
+.imgnoticias img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .imgnoticias,
+  .parrafonoti {
+    width: 100%;
+  }
+}
+.parrafonoti {
+  justify-items: center;
+  justify-content: center;
+}
+
+/* FOOTER */
+footer {
+  background: #0B0B0B;
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border: #ED1C24 solid 5px;
+}
+
+.LogoFooter {
+  height: 70px;
+  margin: auto;
+  padding: auto;
+  display: flex;
+}
+
+.LogoAuspiciante1 {
+  height: 50px;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.texto_footer {
+  color: white;
+  font-family: "Bungee", sans-serif;
+  text-align: center;
+  margin: auto;
+  font-size: 10px;
+  text-align: center;
+  padding: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=estilos.css.map */

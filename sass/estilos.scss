@@ -4,9 +4,6 @@
     padding: 0;
 }
 
-{font-family: 'Bungee', sans-serif;
-}
-
 
 /*  BODY */
 body {width: 100%;
@@ -38,10 +35,10 @@ body {width: 100%;
 
 .navbar .navbar-nav .nav-link::after {
     content: ''; /* Agrega un contenido vacío para el subrayado */
-    position: absolute; /* Posiciona el subrayado de forma absoluta */
-    left: 0; /* Lo coloca al inicio del elemento */
-    bottom: -2px; /* Lo coloca debajo del texto */
-    width: 100%; /* El ancho es igual al ancho del elemento padre */
+    position: absolute; 
+    left: 0; 
+    bottom: -2px; 
+    width: 100%; 
     height: 2px; /* Altura del subrayado */
     background-color: transparent; /* Inicialmente transparente */
     transition: background-color 0.3s; /* Transición suave para el color */
@@ -118,21 +115,20 @@ summary {font-size: 25px;
 
 .accesorios_armas li h3 {font-size: 18px;
     background: #323234;
-
 }
 
 .accesorios_armas li h4 {font-size: 20px;
 }
 
-/* Estilos para el formulario de inicio de sesión */
+/* MI CUENTA */
 .InicioSesion {
     max-width: 400px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #323234;
+    background-color: #0B0B0B;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(250, 250, 250, 0.1);
-  }
+}
 
   .Usuario label,
 .Contraseña label {
@@ -142,12 +138,12 @@ summary {font-size: 25px;
   .InicioSesion form {
     display: flex;
     flex-direction: column;
-  }
+}
   
   .Usuario,
   .Contraseña {
     margin-bottom: 20px;
-  }
+}
   
   .Usuario input,
   .Contraseña input {
@@ -155,21 +151,21 @@ summary {font-size: 25px;
     padding: 10px;
     border: 1px solid #ED1C24;
     border-radius: 5px;
-  }
+}
   
   .Recordar {
     text-align: right;
     font-size: 14px;
-  }
+}
   
   .Recordar a {
     color: #ED1C24;
     text-decoration: none;
-  }
+}
   
   .Recordar a:hover {
     text-decoration: underline;
-  }
+}
   
   
   .BotonIniciarSesion {
@@ -180,31 +176,31 @@ summary {font-size: 25px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
+}
   
   .BotonIniciarSesion:hover {
     background-color: #f84600;
-  }
+}
 
 /* REDES */
   .redes {
     display: flex;
     flex-wrap: wrap; /* Establece un contenedor flexible */
-  }
+}
   
   .redes a {
     margin-right: 10px; /* Espacio entre las imágenes */
-  }
+}
   
   .fotored {
     width: 200px; /* Ancho inicial de las imágenes */
     height: auto; /* Altura ajustada automáticamente */
     transition: transform 0.3s; /* Transición suave para el efecto de agrandamiento */
-  }
+}
   
   .fotored:hover {
     transform: scale(1.3); /* Agrandar la imagen al 120% cuando pases el mouse sobre ella */
-  }
+}
 
 
 /* NOTICIAS */
@@ -213,7 +209,7 @@ summary {font-size: 25px;
     flex-wrap:wrap;
     justify-content: space-between;
     gap: 20px;
-  }
+}
 
 .imgnoticias,
 .parrafonoti {
@@ -231,15 +227,16 @@ summary {font-size: 25px;
     .parrafonoti {
       width: 100%;
     }
-  }
+}
 
   .parrafonoti {justify-items: center;
     justify-content: center;
 
-  }
+}
 
 
 /* FOOTER */
+
 
 footer {background: #0B0B0B;
     height: 100px;
@@ -254,7 +251,7 @@ footer {background: #0B0B0B;
 
 .LogoFooter{height: 70px;
     margin: auto;
-    padding: auto   ;   
+    padding: auto;   
     display: flex;   
 }
 
